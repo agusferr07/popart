@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP ART - Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo dinámico -->
+    <div id="colorGrid" class="color-grid-bg"></div>
+    
+    <!-- Header con navegación -->
+    <header class="header">
+        <nav class="navigation">
+            <div class="nav-brand">
+                <img src="imagenes/logo.png" alt="POP ART" class="logo-burst" onclick="window.location.href='index.html'">
+            </div>
+            
+            <!-- Menú hamburguesa para móviles -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="historia.html">HISTORIA</a></li>
+                <li><a href="artistas.html">ARTISTAS PRINCIPALES</a></li>
+                <li><a href="obras.html">OBRAS</a></li>
+                <li><a href="concepto.html">CONCEPTO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal con título destacado -->
+    <main class="main-content">
+        <!-- Título principal POP ART con imagen de fondo -->
+        <div class="hero-section">
+            <img src="imagenes/fondotitulo.png" alt="Fondo Pop Art" class="hero-background-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="pop-title">POP ART</h2>
+                <p class="subtitle">¡Explora el mundo vibrante del arte pop!</p>
+                
+                <!-- Efectos cómicos flotantes -->
+                <div class="comic-effects">
+                    <div class="comic-burst">✨</div>
+                    <div class="comic-burst">🎨</div>
+                    <div class="comic-burst">💥</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de introducción -->
+        <section class="intro-section">
+            <h2 class="intro-title">Bienvenido al mundo del Pop Art</h2>
+            <p class="intro-text">
+                El Pop Art revolucionó el mundo del arte en los años 50 y 60, 
+                transformando objetos cotidianos y elementos de la cultura popular 
+                en obras de arte vibrantes y llamativas. Descubre cómo este movimiento 
+                artístico cambió para siempre nuestra percepción del arte y la cultura.
+            </p>
+        </section>
+
+        <!-- Sección "Sabías qué..." -->
+        <section class="sabias-que-section">
+            <h2 class="sabias-title">¿Sabías qué...?</h2>
+            <div class="sabias-container">
+                <div class="sabias-que-fact active">
+                    <p>El término "Pop Art" fue acuñado por el crítico británico Lawrence Alloway en 1955</p>
+                </div>
+                <div class="sabias-que-fact">
+                    <p>Andy Warhol creó más de 1000 serigrafías de Marilyn Monroe</p>
+                </div>
+                <div class="sabias-que-fact">
+                    <p>Roy Lichtenstein se inspiró en los cómics para crear sus obras más famosas</p>
+                </div>
+                <div class="sabias-que-fact">
+                    <p>El Pop Art surgió como una reacción contra el expresionismo abstracto</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de obras famosas -->
+        <section class="obras-collage-section">
+            <div class="obras-carousel">
+                <div class="obras-carousel-track">
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/soup-cans.jpg" alt="Campbell's Soup">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/marilyn.jpg" alt="Marilyn Monroe">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/whaam.jpg" alt="Whaam!">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/love.jpg" alt="LOVE">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/brillo-box.jpg" alt="Brillo Box">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/drowing-girl.jpg" alt="Drowning Girl">
+                    </div>
+                    <!-- Duplicar para efecto continuo -->
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/soup-cans.jpg" alt="Campbell's Soup">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/marilyn.jpg" alt="Marilyn Monroe">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/whaam.jpg" alt="Whaam!">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/love.jpg" alt="LOVE">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/brillo-box.jpg" alt="Brillo Box">
+                    </div>
+                    <div class="obras-carousel-item">
+                        <img src="imagenes/drowing-girl.jpg" alt="Drowning Girl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botones de navegación en zigzag -->
+        <section class="comic-bubbles">
+            <div class="bubble-container">
+                <div class="comic-bubble" onclick="window.location.href='historia.html'">
+                    <div class="bubble-content">
+                        <h3>HISTORIA</h3>
+                        <p>Descubre los orígenes y evolución del Pop Art</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bubble-container">
+                <div class="comic-bubble" onclick="window.location.href='artistas.html'">
+                    <div class="bubble-content">
+                        <h3>ARTISTAS</h3>
+                        <p>Conoce a los maestros del movimiento</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bubble-container">
+                <div class="comic-bubble" onclick="window.location.href='obras.html'">
+                    <div class="bubble-content">
+                        <h3>OBRAS</h3>
+                        <p>Explora las piezas más icónicas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bubble-container">
+                <div class="comic-bubble" onclick="window.location.href='concepto.html'">
+                    <div class="bubble-content">
+                        <h3>CONCEPTO</h3>
+                        <p>Entiende la filosofía del Pop Art</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 POP ART - Todos los derechos reservados</p>
+            <p>Explora el mundo vibrante del arte pop</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

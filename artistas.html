@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas Principales del Pop Art - POP ART</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo dinámico -->
+    <div id="colorGrid" class="color-grid-bg"></div>
+    
+    <!-- Header con navegación -->
+    <header class="header">
+        <nav class="navigation">
+            <div class="nav-brand">
+                <img src="imagenes/logo.png" alt="POP ART" class="logo-burst" onclick="window.location.href='index.html'">
+            </div>
+            
+            <!-- Menú hamburguesa para móviles -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="historia.html">HISTORIA</a></li>
+                <li><a href="artistas.html" class="active">ARTISTAS PRINCIPALES</a></li>
+                <li><a href="obras.html">OBRAS</a></li>
+                <li><a href="concepto.html">CONCEPTO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Hero de página -->
+        <div class="page-hero artistas-hero">
+            <h1 class="page-title">ARTISTAS PRINCIPALES</h1>
+            <p class="page-subtitle">Los genios que revolucionaron el arte</p>
+            <div class="artistas-effects">
+                <div class="comic-burst">🎨</div>
+                <div class="comic-burst">⭐</div>
+                <div class="comic-burst">💫</div>
+            </div>
+        </div>
+
+        <!-- Grid de Artistas -->
+        <section class="artistas-grid-section">
+            <h2 class="section-title">Los Maestros del Pop Art 🌟</h2>
+            
+            <div class="artistas-grid">
+                <!-- Andy Warhol -->
+                <div class="artista-card warhol-card" data-artist="warhol">
+                    <div class="artista-image-container">
+                        <img src="imagenes/warhol.jpg" alt="Andy Warhol" class="artista-image">
+                        <div class="artista-overlay">
+                            <div class="artista-name">ANDY WARHOL</div>
+                            <div class="artista-period">1928 - 1987</div>
+                        </div>
+                    </div>
+                    <div class="artista-info">
+                        <h3 class="artista-title">El Rey del Pop Art</h3>
+                        <p class="artista-description">Artista estadounidense que transformó la cultura popular en arte. Conocido por sus serigrafías de celebridades y objetos cotidianos.</p>
+                        <div class="artista-highlights">
+                            <span class="highlight">🏆 Fundador del movimiento</span>
+                            <span class="highlight">🎭 Factory Studio</span>
+                            <span class="highlight">📺 Celebridades</span>
+                        </div>
+                        <button class="artista-button" onclick="showArtistDetails('warhol')">
+                            Ver Biografía Completa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Roy Lichtenstein -->
+                <div class="artista-card lichtenstein-card" data-artist="lichtenstein">
+                    <div class="artista-image-container">
+                        <img src="imagenes/lichtenstein.jpg" alt="Roy Lichtenstein" class="artista-image">
+                        <div class="artista-overlay">
+                            <div class="artista-name">ROY LICHTENSTEIN</div>
+                            <div class="artista-period">1923 - 1997</div>
+                        </div>
+                    </div>
+                    <div class="artista-info">
+                        <h3 class="artista-title">Maestro de los Cómics</h3>
+                        <p class="artista-description">Pionero en el uso de técnicas de impresión comercial y elementos de cómics en el arte de galería.</p>
+                        <div class="artista-highlights">
+                            <span class="highlight">�� Cómics & Ben-Day</span>
+                            <span class="highlight">🎯 Puntos característicos</span>
+                            <span class="highlight">💭 Onomatopeyas</span>
+                        </div>
+                        <button class="artista-button" onclick="showArtistDetails('lichtenstein')">
+                            Ver Biografía Completa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- David Hockney -->
+                <div class="artista-card hockney-card" data-artist="hockney">
+                    <div class="artista-image-container">
+                        <img src="imagenes/hockney.jpg" alt="David Hockney" class="artista-image">
+                        <div class="artista-overlay">
+                            <div class="artista-name">DAVID HOCKNEY</div>
+                            <div class="artista-period">1937 - Presente</div>
+                        </div>
+                    </div>
+                    <div class="artista-info">
+                        <h3 class="artista-title">Pionero Digital</h3>
+                        <p class="artista-description">Artista británico que exploró nuevas tecnologías y técnicas, desde la pintura tradicional hasta el arte digital.</p>
+                        <div class="artista-highlights">
+                            <span class="highlight">🏊 Piscinas icónicas</span>
+                            <span class="highlight">📱 Arte digital</span>
+                            <span class="highlight">🎨 Experimentación</span>
+                        </div>
+                        <button class="artista-button" onclick="showArtistDetails('hockney')">
+                            Ver Biografía Completa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- James Rosenquist -->
+                <div class="artista-card rosenquist-card" data-artist="rosenquist">
+                    <div class="artista-image-container">
+                        <img src="imagenes/rosenquist.jpg" alt="James Rosenquist" class="artista-image">
+                        <div class="artista-overlay">
+                            <div class="artista-name">JAMES ROSENQUIST</div>
+                            <div class="artista-period">1933 - 2017</div>
+                        </div>
+                    </div>
+                    <div class="artista-info">
+                        <h3 class="artista-title">Maestro del Collage</h3>
+                        <p class="artista-description">Conocido por sus pinturas monumentales que combinan imágenes publicitarias y elementos de la cultura de masas.</p>
+                        <div class="artista-highlights">
+                            <span class="highlight">🖼️ Pinturas monumentales</span>
+                            <span class="highlight">📢 Publicidad</span>
+                            <span class="highlight">🎭 Cultura de masas</span>
+                        </div>
+                        <button class="artista-button" onclick="showArtistDetails('rosenquist')">
+                            Ver Biografía Completa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Jasper Johns -->
+                <div class="artista-card johns-card" data-artist="johns">
+                    <div class="artista-image-container">
+                        <img src="imagenes/johns.jpg" alt="Jasper Johns" class="artista-image">
+                        <div class="artista-overlay">
+                            <div class="artista-name">JASPER JOHNS</div>
+                            <div class="artista-period">1930 - Presente</div>
+                        </div>
+                    </div>
+                    <div class="artista-info">
+                        <h3 class="artista-title">Símbolos Americanos</h3>
+                        <p class="artista-description">Artista que transformó símbolos cotidianos como banderas y números en obras de arte icónicas.</p>
+                        <div class="artista-highlights">
+                            <span class="highlight">��🇸 Banderas</span>
+                            <span class="highlight">🔢 Números</span>
+                            <span class="highlight">🎯 Símbolos</span>
+                        </div>
+                        <button class="artista-button" onclick="showArtistDetails('johns')">
+                            Ver Biografía Completa
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tom Wesselmann -->
+                <div class="artista-card wesselmann-card" data-artist="wesselmann">
+                    <div class="artista-image-container">
+                        <img src="imagenes/wesselmann.jpg" alt="Tom Wesselmann" class="artista-image">
+                        <div class="artista-overlay">
+                            <div class="artista-name">TOM WESSELMANN</div>
+                            <div class="artista-period">1931 - 2004</div>
+                        </div>
+                    </div>
+                    <div class="artista-info">
+                        <h3 class="artista-title">Arte y Publicidad</h3>
+                        <p class="artista-description">Conocido por sus "Great American Nudes" y la fusión de arte y publicidad en sus obras.</p>
+                        <div class="artista-highlights">
+                            <span class="highlight">👤 Great American Nudes</span>
+                            <span class="highlight">📺 Publicidad</span>
+                            <span class="highlight">🎨 Collage</span>
+                        </div>
+                        <button class="artista-button" onclick="showArtistDetails('wesselmann')">
+                            Ver Biografía Completa
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de legado -->
+        <section class="legacy-section">
+            <h2 class="section-title">Legado de los Artistas</h2>
+            <div class="legacy-grid">
+                <div class="legacy-item">
+                    <h3>Influencia Contemporánea</h3>
+                    <p>Los artistas Pop Art siguen influenciando el arte contemporáneo, el diseño gráfico y la cultura visual actual.</p>
+                </div>
+                <div class="legacy-item">
+                    <h3>Democratización del Arte</h3>
+                    <p>Su trabajo ayudó a romper las barreras entre el arte "alto" y la cultura popular, haciendo el arte más accesible.</p>
+                </div>
+                <div class="legacy-item">
+                    <h3>Innovación Técnica</h3>
+                    <p>Introdujeron nuevas técnicas como la serigrafía y el uso de medios comerciales en el arte de galería.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 POP ART - Todos los derechos reservados</p>
+            <p>Explora el mundo vibrante del arte pop</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
