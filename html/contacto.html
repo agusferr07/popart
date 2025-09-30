@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pop Art</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo dinámico de cuadrados Pop Art -->
+    <div id="colorGrid" class="color-grid-bg"></div>
+    <header class="header">
+        <nav class="navigation">
+            <div class="nav-brand">
+                <img src="../imagenes/logo.png" alt="POP ART" class="logo-burst" onclick="window.location.href='index.html'">
+            </div>
+            
+            <!-- Menú hamburguesa para móviles -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <ul class="nav-menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="historia.html">HISTORIA</a></li>
+                <li><a href="artistas.html">ARTISTAS PRINCIPALES</a></li>
+                <li><a href="obras.html">OBRAS</a></li>
+                <li><a href="concepto.html">CONCEPTO</a></li>
+                <li><a href="contacto.html" class="active">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>                <li><a href="concepto.html">CONCEPTO</a></li>
+                <li><a href="contacto.html" class="active">CONTACTO</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1 class="page-title">¡CONECTA CON EL POP ART!</h1>
+                <p class="page-subtitle">¿Tienes preguntas? ¿Quieres colaborar? ¡Estamos aquí!</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h2 class="section-title">Envíanos un Mensaje</h2>
+                <div class="form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono">
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <select id="asunto" name="asunto" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="consulta">Consulta General</option>
+                                    <option value="colaboracion">Colaboración</option>
+                                    <option value="evento">Evento</option>
+                                    <option value="prensa">Prensa</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntanos qué tienes en mente..." required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Quiero recibir noticias sobre Pop Art</label>
+                        </div>
+                        <button type="submit" class="submit-button">¡ENVIAR MENSAJE!</button>
+                    <div id="mensajeConfirmacion" class="mensaje-confirmacion" style="display: none;">
+                        <h3>¡Gracias por tu respuesta!</h3>
+                        <p>Ya nos vamos a contactar contigo pronto.</p>
+                    </div>                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Redes Sociales -->
+        <section class="social-section">
+            <div class="container">
+                <h2 class="section-title">Síguenos en Redes Sociales</h2>
+                <div class="social-grid">
+                    <a href="#" class="social-card facebook">
+                        <div class="social-icon">📘</div>
+                        <h3>Facebook</h3>
+                        <p>@PopArtOficial</p>
+                    </a>
+                    <a href="#" class="social-card instagram">
+                        <div class="social-icon">📷</div>
+                        <h3>Instagram</h3>
+                        <p>@popart_world</p>
+                    </a>
+                    <a href="#" class="social-card twitter">
+                        <div class="social-icon">🐦</div>
+                        <h3>Twitter</h3>
+                        <p>@PopArtNews</p>
+                    </a>
+                    <a href="#" class="social-card youtube">
+                        <div class="social-icon">📺</div>
+                        <h3>YouTube</h3>
+                        <p>Pop Art Channel</p>
+                    </a>
+                    <a href="#" class="social-card tiktok">
+                        <div class="social-icon">🎵</div>
+                        <h3>TikTok</h3>
+                        <p>@popartviral</p>
+                    </a>
+                    <a href="#" class="social-card pinterest">
+                        <div class="social-icon">📌</div>
+                        <h3>Pinterest</h3>
+                        <p>Pop Art Gallery</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
